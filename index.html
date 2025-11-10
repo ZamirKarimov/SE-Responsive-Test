@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Page with Carousel</title>
+    <!-- Link your CSS file here -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>My Site Title</h1>
+        <!-- Optional: simple nav -->
+        <nav><a href="#">Home</a> <a href="#">About</a> <a href="#">Contact</a></nav>
+    </header>
+
+    <main class="site-main">
+        <section class="intro">
+            <h2>Welcome</h2>
+            <p>Welcome to the Italy!</p>
+        </section>
+
+        <!-- CSS-only carousel (no JS) structure -->
+        <section class="carousel" aria-label="Image Carousel">
+            <!-- Controls: three radio buttons -->
+            <input type="radio" name="slides" id="slide-1" checked aria-hidden="true" />
+            <input type="radio" name="slides" id="slide-2" aria-hidden="true" />
+            <input type="radio" name="slides" id="slide-3" aria-hidden="true" />
+
+            <!-- Slides wrapper -->
+            <div class="slides">
+                <div class="slide">
+                    <img src="./assets/images/la-so-vk4vjTNVrTg-unsplash.jpg" alt="Italian Street with Vespa parked" />
+                    <p>Italian Street with Vespa parked</p>
+                    <label class="prev" for="slide-3">‹</label>
+                    <label class="next" for="slide-2">›</label>
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/david-kohler-VFRTXGw1VjU-unsplash.jpg" alt="Colosseum in Rome" />
+                    <p>Colosseum in Rome during the morning blue hour with no people</p>
+                    <label class="prev" for="slide-1">‹</label>
+                    <label class="next" for="slide-3">›</label>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/images/claudio-hirschberger-HI5c2A-LOqs-unsplash.jpg" alt="Rome Landscape" />
+                    <p>Rome Landscape</p>
+                    <label class="prev" for="slide-1">‹</label>
+                    <label class="next" for="slide-3">›</label>
+                </div>
+            </div>
+
+            <!-- Navigation dots (labels tied to radios) -->
+            <div class="dots" role="tablist" aria-label="Choose slide">
+                <label for="slide-1" role="tab" aria-controls="slide-1">1</label>
+                <label for="slide-2" role="tab" aria-controls="slide-2">2</label>
+                <label for="slide-3" role="tab" aria-controls="slide-3">3</label>
+            </div>
+
+            <!-- Prev/Next (optional) -->
+            <div class="arrows" aria-hidden="true">
+
+
+
+
+                ≈
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <small>© 2025 Zamir. All rights reserved.</small>
+    </footer>
+</body>
+
+</html>

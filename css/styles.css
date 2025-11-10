@@ -1,0 +1,65 @@
+
+
+@hide sthe radio inputs but keeps them functional
+.carousel input[type="radio"] {
+  display: none;
+}
+
+/* container 4 carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* container for slides - 3 slides each 100% width for total of 300% */
+.carousel .slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+/* each individual slide */
+.carousel .slide {
+  /* width: 100%; */
+  flex-shrink: 0;
+}
+.carousel .slide img {  
+  /* height: auto; */
+  display: block;
+  width: 80vh;
+}
+
+/* control the visible slide */
+#slide-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide-2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide-3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+/* dots navigation */
+.carousel .dots {
+  text-align: center;
+  margin-top: 10px;
+}
+.carousel .dots label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slide {
+  width: 80vh;
+  height: 60vh;
+  object-fit: cover;
+}
