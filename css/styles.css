@@ -94,7 +94,7 @@ header img {
 footer {
   right: 0;
   left: 0;
-  bottom: 1rem;
+  bottom: 0vh;
   font-size: 1rem;
   border-top: 0.1rem black solid;
 }
@@ -230,7 +230,7 @@ li {
 .carousel__next {
   position: absolute;
   /* top: 0; */
-  margin-top: 80vh;
+  margin-top: 80svh;
   width: 4rem;
   height: 4rem;
   /* transform: translateY(-50%); */
