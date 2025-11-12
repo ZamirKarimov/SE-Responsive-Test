@@ -4,40 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Responsive Page with Carousel</title>
+    <title>This is crazy, Mr. Re</title>
     <!-- Link your CSS file here -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="site-header">
-        <h1>My Site Title</h1>
-        <!-- Optional: simple nav -->
-        <nav><a href="#">Home</a> <a href="#">About</a> <a href="#">Contact</a></nav>
+        <p>This is crazy, Mr. Re</p>
     </header>
-
     <main class="site-main">
-        <section class="intro">
-            <h2>Welcome</h2>
-            <p>Welcome to the Italy!</p>
-        </section>
         <section class="carousel" aria-label="Gallery">
             <ol class="carousel__viewport">
                 <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <p></p>
+                    <div class="title">
+                        <h1>Welcome</h1>
+                    </div>
                     <div class="carousel__snapper">
                         <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
                         <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
                     </div>
                 </li>
                 <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                    <p></p>
+                    <div class="title">
+                        <h1>to</h1>
+                    </div>
+                    <div class="carousel__snapper"><a href="#carousel__slide1" class="carousel__prev">Go to previous
+                            slide</a>
+                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                    </div>
+
                 </li>
                 <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                    <p></p>
+                    <div class="title">
+                        <h1>Italy!</h1>
+                    </div>
+                    <div class="carousel__snapper"><a href="#carousel__slide2" class="carousel__prev">Go to previous
+                            slide</a>
+                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                    </div>
+
                 </li>
             </ol>
             <aside class="carousel__navigation">
@@ -55,7 +67,6 @@
             </aside>
         </section>
     </main>
-
     <footer class="site-footer">
         <small>© 2025 Zamir. All rights reserved.</small>
     </footer>
